@@ -6,7 +6,7 @@ function Select(props){
             <label htmlFor={props.name}>{props.text}</label>
             <select name={props.name} id={props.name}>
                 <option>Selecione uma opção</option>
-                {props.map((option) => (
+                {props.options.map((option) => (
                     <option value={option.id} key={option.id}>
                         {option.name}
                     </option>      
